@@ -17,7 +17,6 @@ services:
       - DJANGO_SETTINGS_MODULE=heroes_example.settings
       - DATABASE_URL=postgres://postgres:postgres@database:5432/example
       - SECRET_KEY=set this to a secret value in production!!!
-#      - SECRET_KEY= set this to a secret value in production!!!
       - DEBUG=True
       - STATIC_ROOT=/var/www/backend/static/
       - STATIC_URL=/api/static/

@@ -8,6 +8,7 @@ brotlipy==0.5.1
 cffi==1.8.2               # via brotlipy
 django-environ==0.4.0
 django-extensions==1.7.4
+django-filter==0.15.3
 Django==1.10.2            # via django-environ
 djangorestframework==3.4.6
 grako==3.14.0

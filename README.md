@@ -1,37 +1,39 @@
 # Heroes Example App using Angular2 and Django-Rest-Framework 
 
-## For the lazy
+## Starting the stack
 
-### Starting the application
+### Prerequisites
 
 ```
-docker-compose -f compose.yml -f compose-development.yml up -d database
-docker-compose -f compose.yml -f compose-development.yml run --rm backend bash -c "./manage.py migrate"
-docker-compose -f compose.yml -f compose-development.yml up -d
+# node angular2
+npm install -g angular-cli
+cd frontend
+npm install
+```
+
+### Running
+
+```sh
+./build.sh
+docker-compose run --rm backend bash -c "./manage.py migrate"
+docker-compose up
 ```
 
 Connect to `localhost:8088`.
 
-### Stopping and cleaning up
+### Cleaning containers up
 
 Only just stop:
 
-```
-docker-compose -f compose.yml -f compose-development.yml stop
+```sh
+docker-compose stop
 ```
 
 Remove all: **WARNING** this destroys the database and all data in it!
+
+```sh
+docker-compose down
 ```
-docker-compose -f compose.yml -f compose-development.yml down
-```
-
-### Starting the project
-
-docker-compose -f compose.yml -f compose-development.yml up -d database
-docker-compose -f compose.yml -f compose-development.yml run --rm backend bash -c "./manage.py migrate"
-docker-compose -f compose.yml -f compose-development.yml up -d
-
-Connect to `localhost:8088`.
 
 ## Structure
 

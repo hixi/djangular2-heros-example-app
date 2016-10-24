@@ -8,3 +8,4 @@ whitenoise
 brotlipy
 grako
 Werkzeug
+django-filter
