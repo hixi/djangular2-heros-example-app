@@ -39,8 +39,6 @@ services:
     environment:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=example
-    ports:
-      - "5432:5432"
   nginx:
 #    image: <dockerhub>/<project-nginx-proxy>
 #   Ports is just for local development
