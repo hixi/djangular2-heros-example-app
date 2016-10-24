@@ -1,0 +1,10 @@
+Django
+django-extensions
+djangorestframework
+gunicorn
+psycopg2
+django-environ
+whitenoise
+brotlipy
+grako
+Werkzeug
