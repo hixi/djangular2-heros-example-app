@@ -19,7 +19,7 @@ docker-compose run --rm backend bash -c "./manage.py migrate"
 docker-compose up
 ```
 
-Connect to `localhost:8088`.
+Connect to `localhost:8808`.
 
 ### Cleaning containers up
 
